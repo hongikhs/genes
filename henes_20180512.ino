@@ -1,24 +1,29 @@
 #include <SoftwareSerial.h>
-#define BT_RX 12
-#define BT_TX 13
-const int SPEAKER = 3;
-#define M2_DIR 4  //handle
-#define M2_PWM 5
-#define M1_PWM 6  //move
-#define M1_DIR 7
+
+# PIN MAP
 const int HORN = 2;
+const int SPEAKER = 3;
+const int M2_DIR = 4;  //handle
+const int M2_PWM = 5;
+const int M1_PWM = 6;  //move
+const int M1_DIR = 7;
 const int DIR_R = 8;
 const int DIR_L = 9;
 const int LIGHT_R = 10;
 const int LIGHT_L = 11;
+const int BT_RX = 12;
+const int BT_TX = 13;
+
+# CONSTANT VALUES
 const int H_LEFT = 871;
 const int H_RIGHT = 119;
 const int S_LEFT = 900;
 const int S_RIGHT = 220;
-#define BREAK_H 630
-#define BREAK_L 0
-#define ACCEL_H 858
-#define ACCEL_L 175
+const int BREAK_H = 630;
+const int BREAK_L = 0;
+const int ACCEL_H = 858;
+const int ACCEL_L = 175;
+
 SoftwareSerial bt(BT_RX,BT_TX); // RX, TX
 int drive_mode = 0; // 0 for BT, 1 for BABY
 int b1,b2,b3,b4;
