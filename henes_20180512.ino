@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-# PIN MAP
+// PIN MAP
 const int HORN = 2;
 const int SPEAKER = 3;
 const int M2_DIR = 4;  //handle
@@ -14,7 +14,7 @@ const int LIGHT_L = 11;
 const int BT_RX = 12;
 const int BT_TX = 13;
 
-# CONSTANT VALUES
+// CONSTANT VALUES
 const int H_LEFT = 871;
 const int H_RIGHT = 119;
 const int S_LEFT = 900;
